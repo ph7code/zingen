@@ -48,6 +48,7 @@
   --h3-mobile: 800 1.25rem/1.2 var(--ff-sans);      /* 20px / 120% */
   --span-mobile: 500 0.875rem/1 var(--ff-sans);     /* 14px / 100% */
   --p-mobile: 400 1rem/1.6 var(--ff-sans);          /* 16px / 160% */
+  --px-lg: 1.5rem
 }
 
 html{
@@ -73,11 +74,16 @@ h2{
 h3{
   font: var(--h3-mobile);
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul [role="list"]{
+  list-style: none;
+}
 @media (width >= 80em) {
   :root {
-    --fs-lg: 1.25rem;
-    --fs-xl: 1.5rem;
-    --fs-2xl: 2.5rem
+    --px-lg: 2rem;
   }
   h1{
     font: var(--h1-desktop);
