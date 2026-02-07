@@ -89,6 +89,8 @@ ul [role="list"]{
 @media (width >= 80em) {
   :root {
     --px-lg: 2rem;
+
+    
     --py-base: 1.5rem;
     --py-lg: 2rem;
     --py-xl: 5rem;
