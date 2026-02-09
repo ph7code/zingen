@@ -36,3 +36,35 @@
   padding: 1rem 2rem;
   font-size: var(--fs-lg);
 }
+
+.btn[aria-label]{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: var(--bg-color);
+      border: inherit;
+      inset: 0.09375rem;
+      border-radius: inherit;
+    }
+
+  &::after{
+    content: attr(aria-label);
+    background: var(--btn-bg-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+  &:hover::after{
+    background: linear-gradient(
+      90deg,
+      var(--brand-color-secondary) 0%,
+      var(--brand-color-primary) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
