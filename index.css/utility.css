@@ -21,10 +21,15 @@
 .gap-1{
   gap: 1rem;
 }
+.align-items-center{
+  align-items: center;
+}
+.gap-1\.5rem{
+  gap: 1.5rem;
+}
 .container{
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  border: 1px solid red;
   margin-inline: auto;
   height: calc(100% - var(--px-lg) * 2);
 }
