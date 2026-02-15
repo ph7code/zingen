@@ -1,3 +1,44 @@
 #hero {
   text-align: center;
+
+  .container img[src*="music"]{
+    width: 12.875rem;
+    margin-bottom: 1rem;
+  }
+
+  h1{
+    font: var(--h1-mobile);
+  }
+  p{
+    margin-top: 0.5rem;
+    font: 800 1.25rem/1.2 var(--ff-sans);
+    color: var(--text-color-secondary);
+  }
+  
+  .buttons{
+    margin-top: 2rem;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (width >= 80em){
+  #hero {
+    background: url(/index.css/assets/bg-hero-desktop.svg) no-repeat bottom center/contain;
+    padding-bottom: 15rem;
+    
+    .container img[src*="music"]{
+      width: 25.75rem;
+    }
+
+    h1{
+      font: var(--h1-desktop);
+    }
+    p{
+      font: 800 2.5rem/1.4 var(--ff-sans);
+    }
+    .btn-sm{
+      padding: 1rem 2rem;
+    }
+  }
 }
