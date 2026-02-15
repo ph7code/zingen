@@ -12,11 +12,29 @@
   #smartphone-img{
     display: none;
   }
+  #about .desktop-only{
+    & img[src*="App mockups"]{
+      width: 34rem;
+      height: 35rem;
+    }
+    strong{
+      letter-spacing: 0.08rem;
+    }
+    h2{
+      letter-spacing: -0.04rem;
+      font: var(--h2-desktop);
+    }
+    p{
+      font: var(--p-desktop);
+      color: var(--text-color-secondary);
+    }
+  }
 }
 
 #about{
   background-color: var(--surface-color);
   & strong{
+  letter-spacing: 8%;
   font: var(--span-mobile);
   color: var(--brand-color-secondary);
   }
@@ -33,4 +51,3 @@
   color: var(--text-color-secondary);
   }
 }
-
