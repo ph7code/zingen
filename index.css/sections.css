@@ -1,0 +1,36 @@
+#smartphone-img{
+  margin-top: 5rem;
+  background: url(/index.css/assets/bg-mobile.svg) no-repeat center;
+  text-align: center;
+  & img{
+    max-width: 20rem;
+    max-height: 21rem;
+  }
+}
+
+@media (width >= 80em){
+  #smartphone-img{
+    display: none;
+  }
+}
+
+#about{
+  background-color: var(--surface-color);
+  & strong{
+  font: var(--span-mobile);
+  color: var(--brand-color-secondary);
+  }
+
+  & h2{
+  margin-top: 0.5rem;
+  font: var(--h2-mobile);
+  letter-spacing: 0.4%;
+  }
+
+  & p{
+  margin-top: 0.5rem;
+  font: var(--p-mobile);
+  color: var(--text-color-secondary);
+  }
+}
+
