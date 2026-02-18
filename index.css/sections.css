@@ -33,10 +33,12 @@
 
 #about{
   background-color: var(--surface-color);
+  padding-bottom: 3rem;
   & strong{
   letter-spacing: 8%;
   font: var(--span-mobile);
   color: var(--brand-color-secondary);
+  
   }
 
   & h2{
@@ -50,4 +52,6 @@
   font: var(--p-mobile);
   color: var(--text-color-secondary);
   }
+
+
 }

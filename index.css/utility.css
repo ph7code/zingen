@@ -7,7 +7,9 @@
 .py-xl{
   padding-block: var(--py-xl);
 }
-
+.px-lg{
+  padding-inline: var(--px-lg);
+}
 .desktop-only{
   display: none;
 }

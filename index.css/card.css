@@ -1,0 +1,19 @@
+.card{
+  background-color: var(--surface-color);
+  border-radius: 1.5rem;
+
+  & img{
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  & h3{
+    font: var(--h3-mobile);
+
+  }
+  & p{
+    font: var(--p-mobile);
+    color: var(--text-color-secondary);
+  }
+}
