@@ -10,6 +10,8 @@
 .px-lg{
   padding-inline: var(--px-lg);
 }
+
+
 .desktop-only{
   display: none;
 }
@@ -57,4 +59,5 @@
   .mobile-only{
     display: none;
   }
+  
 }
