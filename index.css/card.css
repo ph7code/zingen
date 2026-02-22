@@ -74,6 +74,7 @@
             max-height: 30rem;
             right: 2rem;
             bottom: 3rem;
+            filter: drop-shadow( 1rem 1rem 4rem rgb(0 0 0 / 0.35));
           }
         }
     }
@@ -101,6 +102,7 @@
           width: 15rem;
           height: 30rem;
           bottom: 1rem;
+          filter: drop-shadow( 1rem 1rem 4rem rgb(0 0 0 / 0.35));
         }
       }
       
@@ -139,6 +141,7 @@
             max-height: 30rem;
             right: 2rem;
             bottom: 3rem;
+            filter: drop-shadow( 1rem 1rem 4rem rgb(0 0 0 / 0.35));
           }
         }
 }
