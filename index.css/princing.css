@@ -1,0 +1,77 @@
+#pricing{
+  & header{
+    text-align: center;
+
+    & strong{
+      color: var(--brand-color-secondary);
+      letter-spacing: 0.8px;
+    }
+
+    & h2{
+      font: var(--h2-mobile);
+    }
+  }
+
+  & .even-columns{
+    margin-top: 2rem;
+
+    & p{
+      margin-top: 0.25rem;
+    }
+    & zin-princing{
+      display: block;
+      font-size: 2rem;
+      line-height: 120%;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+
+      & small{
+      font: var(--p-mobile);
+      color: var(--text-color-secondary);
+      }
+    }
+
+  }
+
+  & .card .btn-md{
+    width: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+  }
+
+  & .card .separator{
+    height: 1px;
+    margin-block: 2rem;
+    background: radial-gradient( var(--text-color-secondary), var(--surface-color) 70%);
+  }
+
+  & ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--text-color-secondary);
+
+    & li{
+      background: url(/index.css/assets/icons/Check.svg) no-repeat;
+      padding-left: 2rem;
+      align-items: center;
+    }
+  }
+  
+  & ul + small{
+    display: block;
+    margin-block: 2rem;
+    font-size: 0.875rem;
+    
+  }
+  @media (width >= 80em){
+
+    & header{
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+
+  }
+}
