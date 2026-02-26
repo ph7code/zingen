@@ -101,6 +101,20 @@
       letter-spacing: 0.08rem;
       color: var(--bg-color);
     }
+    
+    padding: 2px;
+    &::before{
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--brand-color-primary) 0%,
+        var(--brand-color-secondary) 100%
+      );
+      position: absolute;
+      inset: 0;
+      border-radius: 1.5rem;
+      z-index: -1;
+    }
   }
 
 
@@ -110,6 +124,9 @@
       max-width: 50rem;
       margin-inline: auto;
     }
-
+    
+    & .premium .card{
+      padding-bottom: 6rem;
+    }
   }
 }
