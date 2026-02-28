@@ -80,9 +80,8 @@
     
     & .card{
       padding-top: 4.25rem;
-    }
 
-    & span{
+      & > span{
       position: absolute;
       top: 0;
       left: 0;
@@ -101,6 +100,9 @@
       letter-spacing: 0.08rem;
       color: var(--bg-color);
     }
+    }
+
+
     
     padding: 2px;
     &::before{
@@ -119,14 +121,28 @@
 
 
   @media (width >= 80em){
+    & .even-columns{
+      align-items: start;
+
+      & .card-1:nth-child(1){
+        margin-top: 2.25rem;
+      }
+    }
 
     & header{
       max-width: 50rem;
       margin-inline: auto;
     }
-    
-    & .premium .card{
+    .premium .card{
       padding-bottom: 6rem;
+    }
+
+    & .card:nth-child(3){
+      margin-top: 2.25rem;
+
+      & .separator{
+        margin-block: 1.5rem;
+      }
     }
   }
 }

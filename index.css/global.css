@@ -12,6 +12,7 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 :root{
   --bg-color: #09090B;
@@ -62,9 +63,16 @@ html{
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
   color: var(--text-color-primary);
+  
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 body{
   background-color: var(--bg-color);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 h1,h2,h3{
   line-height: 1.2;

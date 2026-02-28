@@ -1,0 +1,39 @@
+#download{
+  & .card{
+    position: relative;
+    padding: 3rem 1.5rem 15rem;
+    & a img{
+      width: 100%;
+      height: 100%;
+    }
+    & #person-sing{
+    position: absolute;
+    width: 14.5rem;
+    height: 20rem;
+    bottom: 0;
+    right: -3.5rem;
+    margin: 0;
+    }
+
+    .buttons{
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+  }
+      @media (width >=80em){
+      .card{
+        padding: 8.75rem 5rem;
+    
+        & #person-sing{
+          width: 29.5rem;
+          height: 37.5rem;
+          
+        }
+        & > div:nth-child(1){
+          max-width: 40rem
+        };
+      }
+    }
+  
+}
