@@ -1,0 +1,23 @@
+footer{
+  display: flex;
+  justify-content: space-between;
+    & .footer-links{
+      display: flex;
+      gap: 4rem;
+
+    }
+    ul{
+      color: var(--brand-color-secondary);
+      font-size: 0.8rem;
+      letter-spacing: 0.08rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    & li{
+      color: var(--text-color-secondary);
+      letter-spacing: 0;
+      font-size: 1rem
+    }
+}
