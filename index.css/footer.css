@@ -1,8 +1,12 @@
 footer{
-  display: flex;
-  justify-content: space-between;
+  
+  & img:first-of-type{
+    margin-bottom: 3rem;
+  }
+
     & .footer-links{
       display: flex;
+      flex-direction: column;
       gap: 4rem;
 
     }
@@ -20,4 +24,38 @@ footer{
       letter-spacing: 0;
       font-size: 1rem
     }
+}
+
+@media (width >= 80em){
+  footer{
+    display: flex;
+    justify-content: space-between;
+    
+    & img:first-child{
+      align-self: first baseline;
+    }
+
+    & ul{
+      width: 14rem;
+    }
+    & .footer-links{
+      flex-direction: row;
+    }
+  }
+
+  .bottom{
+    color: var(--text-color-secondary);
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    & div:last-child{
+      font-size: 0.875rem;
+    }
+  }
+
+}
+
+.bottom{
+  display: flex;
+  flex-wrap: wrap;
 }
